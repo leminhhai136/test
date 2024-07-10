@@ -145,7 +145,8 @@ function draw() {
             }
             else {
                 alert("Trò chơi kết thúc!");
-                document.location.reload();
+                document.getElementById('retryButton').style.display = 'block';
+                return;
             }
         }
 
@@ -162,7 +163,10 @@ function draw() {
     }
 }
 
-// draw không được gọi trong môi trường kiểm tra
+function retryGame() {
+    document.location.reload();
+}
+
 if (ctx) {
     draw();
 }
@@ -193,5 +197,6 @@ module.exports = {
     score,
     ctx,
     canvas,
-    resetCanvasContext
+    resetCanvasContext,
+    retryGame
 };

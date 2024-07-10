@@ -7,13 +7,18 @@ body {
 }
 
 #gameCanvas {
-    background-color: #000;
+    background-color: #060606;
     display: block;
     margin: 20px auto;
-    border: 3px solid #333;
+    border: 3px solid #ab0e0e;
 }
 
 #score-board {
     font-size: 24px;
     margin: 30px;
 }
+#retryButton {
+    display: none;
+    margin-top: 20px;
+}
+
